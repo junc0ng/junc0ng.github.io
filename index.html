@@ -2,108 +2,124 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Junyoung Lee</title>
-
-    <meta name="author" content="Junyoung Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Junyoung Lee</title>
+    <meta name="author" content="Junyoung Lee">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Junyoung Lee
-                </p>
-                <p> I am a MS student at Seoul National University(SNU), advised by 
-                  <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>. 
-                  I'm interested in 3D computer vision.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:juncong@snu.ac.kr">Email</a> &nbsp;/&nbsp;
-                  <a href="data/CV_JunyoungLee.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/junc0ng/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/profile_picture.jpeg"><img style="width:100%;max-width:100%;object-fit: cover;" alt="profile photo" src="images/profile_picture.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+    <main class="container">
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-            <!-- Paper 1 -->
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <video width="160" autoplay loop muted playsinline style="border-style: none">
-                  <source src="images/dwm_teaser_narrow.mp4" type="video/mp4">
-                </video>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Dexterous World Models</span>
-                <br>
+      <!-- ===================== Header ===================== -->
+      <header class="header">
+        <div class="header__intro">
+          <h1 class="name">Junyoung Lee</h1>
+          <p class="affiliation">
+            MS student at <strong>Seoul National University</strong>, advised by
+            <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>.
+          </p>
+          <p>I'm interested in 3D computer vision and human-robot interaction.</p>
+          <div class="links">
+            <a class="link-btn" href="mailto:juncong@snu.ac.kr">Email</a>
+            <a class="link-btn" href="data/CV_JunyoungLee.pdf">CV</a>
+            <a class="link-btn" href="https://github.com/junc0ng/" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <a href="images/profile_picture.jpeg">
+          <img class="avatar" src="images/profile_picture.jpeg" alt="Junyoung Lee">
+        </a>
+      </header>
+
+      <!-- ===================== Research ===================== -->
+      <section class="section">
+        <h2 class="section__title">Research</h2>
+        <div class="papers">
+
+          <!-- OmniRobotHome -->
+          <article class="paper">
+            <div class="paper__thumb">
+              <img src="images/omnirobothome_teaser.webp" alt="OmniRobotHome">
+            </div>
+            <div>
+              <h3 class="paper__title">OmniRobotHome: A Multi-Camera Platform for Real-Time Multiadic Human-Robot Interaction</h3>
+              <p class="paper__authors">
+                <a class="me" href="https://junc0ng.github.io" target="_blank">Junyoung Lee*</a>,
+                <a href="https://jellyheadandrew.github.io/" target="_blank">Sookwan Han*</a>,
+                <a href="https://canoneod.github.io/" target="_blank">Jeonghwan Kim*</a>,
+                <a href="https://sulwon-0516.github.io/" target="_blank">Inhee Lee*</a>,
+                <a href="https://willi19.github.io/" target="_blank">Mingi Choi</a>,
+                <a href="https://jlogkim.github.io/" target="_blank">Jisoo Kim</a>,
+                <a href="https://wonjungwoo.github.io/" target="_blank">Wonjung Woo</a>,
+                <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>
+              </p>
+              <span class="paper__venue">arXiv, 2026</span>
+              <div class="paper__links">
+                <a href="https://junc0ng.github.io/omnirobothome/" target="_blank">Project Page</a>
+                <a href="https://arxiv.org/abs/2604.28197" target="_blank">arXiv</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dexterous World Models -->
+          <article class="paper">
+            <div class="paper__thumb">
+              <video autoplay loop muted playsinline>
+                <source src="images/dwm_teaser_narrow.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div>
+              <h3 class="paper__title">Dexterous World Models</h3>
+              <p class="paper__authors">
                 <a href="https://bjkim95.github.io" target="_blank">Byungjun Kim*</a>,
                 <a href="https://taeksuu.github.io" target="_blank">Taeksoo Kim*</a>,
-                <a href="https://junc0ng.github.io" target="_blank"><strong>Junyoung Lee</strong></a>,
-                <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>                <br>
-                <em>CVPR, 2026</em>
-                <br>
-                <a href="https://snuvclab.github.io/dwm/">Project Page</a> /
-                <a href="https://arxiv.org/abs/2512.17907">arXiv</a> /
-                <a href="https://github.com/snuvclab/dwm">Code</a>
-                <br>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/hhoi.gif" alt="paper2" width="160" style="border-style: none">
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <span class="papertitle">Learning to Generate Human-Human-Object Interactions from Textual Descriptions</span>
-                <br>
+                <a class="me" href="https://junc0ng.github.io" target="_blank">Junyoung Lee</a>,
+                <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>
+              </p>
+              <span class="paper__venue">CVPR, 2026</span>
+              <div class="paper__links">
+                <a href="https://snuvclab.github.io/dwm/" target="_blank">Project Page</a>
+                <a href="https://arxiv.org/abs/2512.17907" target="_blank">arXiv</a>
+                <a href="https://github.com/snuvclab/dwm" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- HHOI -->
+          <article class="paper">
+            <div class="paper__thumb">
+              <img src="images/hhoi.gif" alt="HHOI">
+            </div>
+            <div>
+              <h3 class="paper__title">Learning to Generate Human-Human-Object Interactions from Textual Descriptions</h3>
+              <p class="paper__authors">
                 <a href="https://nagooon.github.io" target="_blank">Jeonghyeon Na*</a>,
                 <a href="https://tlb-miss.github.io" target="_blank">Sangwon Baik*</a>,
                 <a href="https://blog.sulwon.com" target="_blank">Inhee Lee</a>,
-                <a href="https://junc0ng.github.io" target="_blank"><strong>Junyoung Lee</strong></a>,
-                <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>                <br>
-                <em>NeurIPS, 2025</em>
-                <br>
-                <a href="https://tlb-miss.github.io/hhoi/">Project Page</a> /
-                <a href="https://arxiv.org/pdf/2511.20446">arXiv</a> /
-                <a href="https://github.com/snuvclab/hhoi_public">Code</a>
-                <br>
-              </td>
-            </tr>
-            <!-- Add more papers here following the same structure -->
+                <a class="me" href="https://junc0ng.github.io" target="_blank">Junyoung Lee</a>,
+                <a href="https://jhugestar.github.io" target="_blank">Hanbyul Joo</a>
+              </p>
+              <span class="paper__venue">NeurIPS, 2025</span>
+              <div class="paper__links">
+                <a href="https://tlb-miss.github.io/hhoi/" target="_blank">Project Page</a>
+                <a href="https://arxiv.org/pdf/2511.20446" target="_blank">arXiv</a>
+                <a href="https://github.com/snuvclab/hhoi_public" target="_blank">Code</a>
+              </div>
+            </div>
+          </article>
 
-          </tbody></table>
-                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </section>
+
+      <!-- ===================== Footer ===================== -->
+      <footer class="footer">
+        Design inspired by <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon Barron</a>.
+      </footer>
+
+    </main>
   </body>
 </html>
