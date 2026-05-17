@@ -107,7 +107,7 @@ strong { font-weight: 600; color: var(--text); }
 .avatar {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   object-fit: cover;
   border: 2px solid var(--border);
   box-shadow: var(--shadow-md);
