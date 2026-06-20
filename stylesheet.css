@@ -87,6 +87,7 @@ strong { font-weight: 600; color: var(--text); }
 .link-btn {
   display: inline-flex;
   align-items: center;
+  gap: 0.4rem;
   padding: 0.45rem 0.95rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -95,6 +96,12 @@ strong { font-weight: 600; color: var(--text); }
   font-size: 0.85rem;
   font-weight: 500;
   transition: var(--transition);
+}
+
+.link-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .link-btn:hover {
